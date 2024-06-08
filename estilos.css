@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    gap: 20px 10px;
+}
+
+header a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+header:hover{
+    background-color: rgba(0, 0, 0, 0.488);
+}
+
+.nav_enlace:hover{
+    padding: 2%;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style-type: none;
+    
+}
+
+
+
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+main{
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(https://www.radioacktiva.com/wp-content/uploads/2024/05/Radioacktiva-Img.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position-y: 0;
+    background-size: 95% auto;
+    background-color: rgba(0, 0, 0, 0.912);
+
+}
+
+.contenedor{
+    text-align: center;
+    padding: 5px;
+    background-color: #1A5276;
+    width: 500px;
+    margin: 20px 650px;
+    border: 10px solid #616A6B;
+    position: sticky;
+    top: 100px;
+    
+    
+}
+main img{
+    width: 200px;
+    margin-left: 45%;
+
+}
+
+#texto_imagen{
+    color: white;   
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 500px;
+    
+    
+}
+#informacion, #argumento{
+margin-left: 70px;
+}
+
+#informacion p, h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#informacion ul {
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#argumento p{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+footer{
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+}
+
+footer img{
+    width: 100px;
+}
+
