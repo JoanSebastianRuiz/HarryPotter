@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --aside: rgba(240, 243, 244, 0.676);
+    --lista_aside: rgba(240, 243, 244, 0.796);
+    --trueno: "\26A1 ";
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url('fonts/HARRYP__.TTF') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif, sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    background-color: rgb(10, 7, 5);
+    position: fixed ;
+    padding: 2% 0;
+    z-index: 2;
+}
+
+#enlaces_header{
+    font-family: "HarryP";
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.enlaces_nav{
+    color: white;
+    text-decoration: none;
+
+}
+
+.enlaces_nav:hover{
+    color: yellow;
+}
+
+.enlaces_nav:hover::before{
+    content: var(--trueno);
+    font-size: 0.75em;
+    color: gold;
+    margin-left: -1em;
+    width: 1em;
+    display: inline-block;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-image: url(https://www.radioacktiva.com/wp-content/uploads/2024/05/Radioacktiva-Img.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+}
+
+#menu_lateral, #informacion_pelicula{
+    background-color: var(--aside);
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu_lateral section, #informacion_pelicula section{
+    background-color: var(--lista_aside);
+    border: 2px solid rgba(128, 128, 128, 0.838);
+    border-radius: 5px;
+    margin: 0 4%;
+    padding-top: 10%;
+    line-height: 1.2em;
+}
+
+#menu_lateral h2, #informacion_pelicula h2{
+    text-align: center;
+    font-family: 'HarryP','Georgia', 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+#menu_lateral nav ul{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    line-height: 1.3em;
+    padding: 10% 2% 10% 5%;
+    list-style-type: none;
+    font-size: 0.9em;
+}
+
+#menu_lateral nav ul ul{
+    list-style-type: disc;
+    border: none;
+    background-color: transparent;
+    padding: 0 2% 0 8%;
+}
+
+#menu_lateral a, #informacion_pelicula a, #informacion_principal a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu_lateral a:hover, #informacion_pelicula a:hover, #informacion_principal a:hover{
+    color: rgb(166, 166, 24);
+}
+
+
+#menu_lateral a:active, #informacion_pelicula a:active, #informacion_principal a:active{
+    text-decoration: underline;
+}
+
+#informacion_principal{
+    padding: 20% 5%;
+    background-color: rgba(0, 0, 0, 0.615);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+#descripcion, .seccion_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+
+iframe{
+    align-self: center;
+}
+
+#informacion_principal{
+    color: white;
+}
+
+#informacion_principal h1{
+    font-family: 'HarryP','Georgia', 'Times New Roman', Times, serif;
+    font-size: 5em;
+    text-align: center;
+}
+
+#informacion_principal h2{
+    font-family: 'HarryP','Georgia', 'Times New Roman', Times, serif;
+    font-size: 3.5em;
+}
+
+#informacion_principal h3{
+    font-family: 'HarryP','Georgia', 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+#informacion_principal hr{
+    border: none;
+    background-color: gray;
+    width: 100%;
+    height: 0.1em;
+}
+
+.texto_principal{
+    background-color: var(--lista_aside);
+    border: 2px solid rgba(128, 128, 128, 0.838);
+    border-radius: 5px;
+    margin: 4%;
+    padding: 4%;
+    line-height: 1.7em;
+    color: black;
+    text-align: justify;
+}
+
+#reparto_contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    scroll-margin-top: 200px;
+}
+.scroll{
+    scroll-margin-top: 7rem;
+}
+
+#imagenes_galeria{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-content: space-around;
+    gap: 2em 2em;
+    justify-content: center;
+}
+
+#imagenes_galeria img{
+    height: 15em;
+}
+
+#imagenes_galeria div{
+    position: relative;
+    text-align: center;
+    line-height: 2em;
+    z-index: 0;
+}
+
+#informacion_pelicula section{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    align-items: center;
+    gap: 0.7em;
+    line-height: 2em;
+}
+
+#informacion_pelicula img{
+    width: 70%;
+    border: 1em solid rgb(228, 228, 18);
+}
+
+#informacion_pelicula section{
+    padding: 1em 1em;
+    text-align: center;
+}
+
+.aside-hr{
+    border: none;
+    height: 0.05rem; 
+    background-color: gray;
+    width: 100%; 
+}
+
+
+
+
+
